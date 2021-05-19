@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane styleClass="linear-modal" stylesheets="@../../css/es.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.ale.realce.controller.LocalizaProdutoController">
+   <children>
+      <TableView fx:id="tav_produto" prefHeight="576.0" prefWidth="517.0">
+        <columns>
+          <TableColumn fx:id="tac_nomeProduto" prefWidth="75.0" text="Produto" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane fx:id="bop_produto" styleClass="linear-fundoTela" stylesheets="@../../css/es.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.ale.realce.controller.MenuProdutoController">
+	<left>
+		<ToolBar orientation="VERTICAL" styleClass="linear-fundoTela" BorderPane.alignment="CENTER">
+			<items>
+				<Button fx:id="but_cadastro" minWidth="120.0" mnemonicParsing="false" prefWidth="155.0" styleClass="buttonMenuSecundario" text="Cadastro" />
+				<Button fx:id="but_tabelaPreco" minWidth="120.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="155.0" styleClass="buttonMenuSecundario" text="tabela Preço" />
+				
+			</items>
+		</ToolBar>
+	</left>
+</BorderPane>

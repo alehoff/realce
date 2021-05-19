@@ -1,0 +1,184 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+
+.labelHref {
+    -fx-font-size: 17.0 px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-effect: dropshadow(gaussian, rgba(255.0, 255.0, 255.0, 0.5), 0.0, 0.0, 0.0, 1.0);
+}
+
+.buttonSistema {
+    -fx-background-color:cadetblue;
+   
+}
+
+.buttonSistema:hover {
+     -fx-background-color: 
+        #090a0c,
+        linear-gradient(#38424b 0%, #1f2429 20%, #191d22 100%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 0%, radius 100%, rgba(114,131,148,0.9), rgba(255,255,255,0));
+    -fx-background-radius: 5,4,3,5;
+    -fx-background-insets: 0,1,2,0;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
+    -fx-font-family: "Arial";
+    -fx-text-fill: linear-gradient(white, #d0d0d0);
+    -fx-font-size: 12px;
+    -fx-padding: 10 20 10 20;
+     
+}
+
+.buttonSistema Text {
+    -fx-effect: dropshadow( one-pass-box , rgba(0,0,0,0.9) , 1, 0.0 , 0 , 1 );
+}
+
+.buttonSistema:focus {
+    -fx-background-color:blue;
+}
+
+.buttonMenuPrincipal:hover {
+    -fx-background-color: linear-gradient(#2A5058, #61a2b1);
+}
+
+.buttonMenuPrincipal {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Narrow";
+    -fx-font-weight: bold;
+    -fx-background-color: #00BFFF;
+    -fx-effect: dropshadow(three-pass-box, rgba(0.0, 0.0, 0.0, 0.6), 5.0, 0.0, 0.0, 1.0);
+}
+
+.buttonMenuSecundario {
+    -fx-text-fill: white;
+    -fx-font-family: "Arial Black";
+    -fx-font-weight: bold;
+    -fx-font-height: 2em;
+    -fx-background-color: #00BFFF;
+}
+
+.buttonMenuSecundario:hover {
+    -fx-text-fill: #FFFFE0;
+    -fx-border-color: #FFFFE0;
+    -fx-border-width: 1px;
+    -fx-background-radius: 30;
+    -fx-background-insets: 0;
+}
+
+.linear-fundoTela {
+    -fx-background-color: #DCDCDC; /*linear-gradient(from 25.0% 25.0% to 100.0% 100.0%, #87CEFA, #ADD8E6);*/
+}
+
+.linear-modal {
+    -fx-background-color: #ADD8E6; /*linear-gradient(from 25.0% 25.0% to 100.0% 100.0%,#FFD700, #FFFFE0);*/
+}
+
+.checkBox {
+    -fx-font-weight: bold;
+}
+
+.labelDescricao {
+    -fx-font-size: 17.0 px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-font-family: "Snell Roundhand";
+
+}
+
+.labelMenu {
+    -fx-font-size: 27.0 px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+    -fx-font-family: "Snell Roundhand";
+}
+
+.labelPropriedades {
+    -fx-font-size: 17.0 px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #191970;
+    -fx-font-style: italic;
+}
+
+/*
+ * TABLE VIEW
+ */
+.table-view {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+
+.table-view .corner {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to bottom, #1dbbdd44, #93f9b944);
+    -fx-background-radius: 7.0px 7.0px 0.0px 0.0px;
+    -fx-background-insets: 0.0 11.0px 0.0 0.0;
+    -fx-padding: 0.0 0.0 5.0px 0.0;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell {
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    -fx-border-color: transparent;
+    -fx-padding: 2.0 0.0 2.0 10.0px;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #93f9b911;
+    -fx-text-background-color: #F5FFFA;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #93f9b911;
+    -fx-background-insets: 0.0, 0.0 0.0 1.0 0.0;
+    -fx-padding: 0.0em;
+}
+
+.table-row-cell:even {
+    -fx-background-color: #1dbbdd11;
+    -fx-background-insets: 0.0, 0.0 0.0 1.0 0.0;
+    -fx-padding: 0.0em;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical,
+.table-view .virtual-flow .scroll-bar:vertical .track,
+.table-view .virtual-flow .scroll-bar:vertical .track-background,
+.table-view .virtual-flow .scroll-bar:horizontal,
+.table-view .virtual-flow .scroll-bar:horizontal .track,
+.table-view .virtual-flow .scroll-bar:horizontal .track-background {
+    -fx-background-color: transparent;
+}
+
+.table-view .virtual-flow .scroll-bar .increment-button,
+.table-view .virtual-flow .scroll-bar .decrement-button {
+    -fx-opacity: 0.0;
+    -fx-padding: 2.0;
+}
+
+.table-view .virtual-flow .scroll-bar:vertical .thumb {
+    -fx-background-color: linear-gradient(to bottom, #1dbbdd44, #93f9b944);
+}
+
+.table-view .virtual-flow .scroll-bar:horizontal .thumb {
+    -fx-background-color: linear-gradient(to right, #1dbbdd44, #93f9b944);
+}
+
+/**
+.table-row-cell:highlighted {
+    -fx-background-color: #81c483;
+    -fx-background-radius: 15.0px;
+}
+
+ */

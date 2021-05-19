@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="realcePU" transaction-type="RESOURCE_LOCAL">
+		<class>br.com.ale.realce.model.entidade.Categoria</class>
+		<class>br.com.ale.realce.model.entidade.Estoque</class>
+		<class>br.com.ale.realce.model.entidade.Produto</class>
+		<class>br.com.ale.realce.model.entidade.Tabela</class>
+		<class>br.com.ale.realce.model.entidade.TabelaVenda</class>
+		<class>br.com.ale.realce.model.entidade.Usuario</class>
+		<class>br.com.ale.realce.model.entidade.Volume</class>
+		<class>br.com.ale.realce.model.entidade.TabelaCusto</class>
+		<class>br.com.ale.realce.model.entidade.ItemPedido</class>
+		<class>br.com.ale.realce.model.entidade.Pedido</class>
+		<class>br.com.ale.realce.model.entidade.PedidoCompra</class>
+		<class>br.com.ale.realce.model.entidade.PedidoVenda</class>
+		<class>br.com.ale.realce.model.entidade.ItemPedidoCompra</class>
+		<class>br.com.ale.realce.model.entidade.Caixa</class>
+		<class>br.com.ale.realce.model.entidade.Pagamento</class>
+		<class>br.com.ale.realce.model.entidade.ItemPedidoVenda</class>
+		<class>br.com.ale.realce.model.entidade.HistoricoCaixa</class>
+		<exclude-unlisted-classes>true</exclude-unlisted-classes>
+		<properties>
+			<property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/realce" />
+			<property name="javax.persistence.jdbc.user" value="postgres" />
+			<property name="javax.persistence.jdbc.password" value="postgres" />
+			<property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+
+			<property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect" /> <!-- DB Dialect -->
+			<property name="hibernate.hbm2ddl.auto" value="update" /> <!-- create / create-drop / update -->
+
+			<property name="hibernate.show_sql" value="false" /> <!-- Show SQL in console -->
+			<property name="hibernate.format_sql" value="false" /> <!-- Show SQL formatted -->
+		</properties>
+	</persistence-unit>
+</persistence>
